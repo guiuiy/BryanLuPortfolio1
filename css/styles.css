@@ -11,6 +11,7 @@ body {
 
 h1 {
     color: #F76C6C;
+    text-align: center;
 }
 
 h2 {
@@ -76,9 +77,17 @@ h2 {
 
 /* Intro */
 
-.intro-message {
+.intro-image {
     padding: 10px;
     height: 50vh;
+    display: block;
+    visibility: visible;
+}
+
+.intro-message {
+    padding: 150px 50px 30px;
+    display: none;
+    visibility: hidden;
 }
 
 marquee {
@@ -175,10 +184,21 @@ marquee {
         font-size: 60px;
     }
     .bounce-image {
-        transform: scale(0.5);
+        transform: scale(0.8);
     }
     #contact {
         padding-top: 0;
+    }
+}
+
+@media (max-width: 576px){
+    .intro-message {
+        display: block;
+        visibility: visible;
+    }
+    .intro-image {
+        display: none;
+        visibility: hidden;
     }
 }
 
