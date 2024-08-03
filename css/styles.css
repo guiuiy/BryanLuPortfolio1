@@ -78,6 +78,7 @@ h2 {
 
 .intro-message {
     padding: 10px;
+    height: 50vh;
 }
 
 marquee {
@@ -95,7 +96,7 @@ marquee {
 
 .arrow {
     padding: 15px 5px 5px;
-    width: 300px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -168,3 +169,17 @@ marquee {
 .fa-water {
     color: #F76C6C;
 }
+
+@media (max-width: 992px){
+    h2 {
+        font-size: 60px;
+    }
+    .bounce-image {
+        transform: scale(0.5);
+    }
+    #contact {
+        padding-top: 0;
+    }
+}
+
+
